@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial Login Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Initial Login Page" customClass="ViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nm-wM-E6z" userLabel="CreateNewAccountButton">
+                                <rect key="frame" x="107" y="343" width="200" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Jeg-gC-uiH"/>
+                                    <constraint firstAttribute="height" constant="50" id="sRx-Cu-TiG"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Create An Account"/>
+                                <connections>
+                                    <segue destination="zNy-tH-sEg" kind="show" id="YcJ-Gv-W4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLw-z3-JJd" userLabel="LoginButton">
+                                <rect key="frame" x="107" y="403" width="200" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3g1-m3-oOU"/>
+                                    <constraint firstAttribute="height" constant="50" id="UbE-d6-c8u"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="dKD-6w-YP8" kind="show" id="DWp-Jj-Ixh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnP-BZ-zJ2">
+                                <rect key="frame" x="105" y="302" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Clone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-Y3-aH1">
+                                <rect key="frame" x="172" y="214.66666666666666" width="70" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_Logo_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="db6-7t-aU9">
+                                <rect key="frame" x="157" y="104.66666666666669" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Iml-LG-tWX"/>
+                                    <constraint firstAttribute="width" constant="100" id="wYd-Mh-l7C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Leander Mathisen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-aw-inY">
+                                <rect key="frame" x="94.666666666666686" y="695" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BLw-z3-JJd" firstAttribute="top" secondItem="1nm-wM-E6z" secondAttribute="bottom" constant="10" id="C6F-2Y-cbe"/>
+                            <constraint firstItem="hnP-BZ-zJ2" firstAttribute="top" secondItem="fvr-Y3-aH1" secondAttribute="bottom" constant="30" id="CGl-IH-zTt"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mbS-aw-inY" secondAttribute="bottom" constant="20" id="Ei6-ZA-Q7E"/>
+                            <constraint firstItem="db6-7t-aU9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HA7-6M-59f"/>
+                            <constraint firstItem="1nm-wM-E6z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LTn-ee-16z"/>
+                            <constraint firstItem="hnP-BZ-zJ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXY-DZ-Xg0"/>
+                            <constraint firstItem="mbS-aw-inY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyQ-L3-kPl"/>
+                            <constraint firstItem="BLw-z3-JJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="meu-H5-hrE"/>
+                            <constraint firstItem="fvr-Y3-aH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mty-jn-NnS"/>
+                            <constraint firstItem="fvr-Y3-aH1" firstAttribute="top" secondItem="db6-7t-aU9" secondAttribute="bottom" constant="10" id="rtU-ZA-GDe"/>
+                            <constraint firstItem="1nm-wM-E6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uFI-YY-Fnn"/>
+                            <constraint firstItem="1nm-wM-E6z" firstAttribute="top" secondItem="hnP-BZ-zJ2" secondAttribute="bottom" constant="20" id="vBj-5X-N5T"/>
+                            <constraint firstItem="fvr-Y3-aH1" firstAttribute="top" secondItem="db6-7t-aU9" secondAttribute="bottom" constant="10" id="ype-v1-PQF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--Login Page-->
+        <scene sceneID="QrB-S8-Zr9">
+            <objects>
+                <viewController id="dKD-6w-YP8" userLabel="Login Page" customClass="ViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ma-Ot-PVr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gu-uk-e5f">
+                                <rect key="frame" x="82" y="255.66666666666663" width="250" height="225"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G01-Th-3pB">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="37.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78c-ny-MgI">
+                                        <rect key="frame" x="0.0" y="37.333333333333343" width="250" height="37.666666666666657"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjp-wf-JIA">
+                                        <rect key="frame" x="0.0" y="75.000000000000028" width="250" height="37.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QrU-LI-Muu">
+                                        <rect key="frame" x="0.0" y="112.33333333333336" width="250" height="37.666666666666671"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-oC-CXd">
+                                        <rect key="frame" x="0.0" y="150.00000000000003" width="250" height="37.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-iQ-Nqa">
+                                        <rect key="frame" x="0.0" y="187.33333333333334" width="250" height="37.666666666666657"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="B5P-eH-7lq"/>
+                                    <constraint firstAttribute="width" constant="250" id="qgt-X3-dnV"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Clone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3L-SK-Tw5">
+                                <rect key="frame" x="172" y="188.33333333333334" width="70" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_Logo_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="wDb-R4-vfT">
+                                <rect key="frame" x="157" y="78.333333333333314" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DGz-rG-uo7"/>
+                                    <constraint firstAttribute="width" constant="100" id="Pii-iE-NIV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Gu-uk-e5f" firstAttribute="centerX" secondItem="1Ma-Ot-PVr" secondAttribute="centerX" id="7tT-7q-yLO"/>
+                            <constraint firstItem="R3L-SK-Tw5" firstAttribute="centerX" secondItem="1Ma-Ot-PVr" secondAttribute="centerX" id="9vW-4a-IVa"/>
+                            <constraint firstItem="R3L-SK-Tw5" firstAttribute="top" secondItem="wDb-R4-vfT" secondAttribute="bottom" constant="10" id="QAq-ym-BqQ"/>
+                            <constraint firstItem="wDb-R4-vfT" firstAttribute="centerX" secondItem="1Ma-Ot-PVr" secondAttribute="centerX" id="lI4-Ka-QYY"/>
+                            <constraint firstItem="0Gu-uk-e5f" firstAttribute="centerY" secondItem="1Ma-Ot-PVr" secondAttribute="centerY" id="rb8-9Q-Dcc"/>
+                            <constraint firstItem="0Gu-uk-e5f" firstAttribute="top" secondItem="R3L-SK-Tw5" secondAttribute="bottom" constant="10" id="vJz-au-baZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4eP-Bh-BaE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsk-ve-tN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="688"/>
+        </scene>
+        <!--Create New Account Page-->
+        <scene sceneID="zOK-B5-cvw">
+            <objects>
+                <viewController id="zNy-tH-sEg" userLabel="Create New Account Page" customClass="ViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8D5-cA-GIy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DEU-zg-MBw">
+                                <rect key="frame" x="82" y="247" width="250" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-Sr-ho4">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="37.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ABQ-de-4Bc">
+                                        <rect key="frame" x="0.0" y="37.666666666666686" width="250" height="37.333333333333343"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqA-3y-jJj">
+                                        <rect key="frame" x="0.0" y="75" width="250" height="37.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-n2-UsE">
+                                        <rect key="frame" x="0.0" y="112.66666666666667" width="250" height="37.333333333333329"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-yA-fkp">
+                                        <rect key="frame" x="0.0" y="150" width="250" height="37.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P18-Be-sem">
+                                        <rect key="frame" x="0.0" y="187.66666666666669" width="250" height="37.333333333333343"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEw-LM-r5j">
+                                        <rect key="frame" x="0.0" y="225" width="250" height="37.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pt-Cl-uXM">
+                                        <rect key="frame" x="0.0" y="262.66666666666669" width="250" height="37.333333333333314"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="PLb-LN-xg9"/>
+                                    <constraint firstAttribute="height" constant="300" id="R9a-cd-hep"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Clone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-7L-cf6">
+                                <rect key="frame" x="172" y="179.66666666666666" width="70" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_Logo_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-YH-r4m">
+                                <rect key="frame" x="157" y="74.666666666666671" width="100" height="100.00000000000001"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="K68-oL-aV6"/>
+                                    <constraint firstAttribute="width" constant="100" id="ofo-PQ-lrv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hXA-YH-r4m" firstAttribute="centerX" secondItem="8D5-cA-GIy" secondAttribute="centerX" id="3MB-Y9-KJ6"/>
+                            <constraint firstItem="DEU-zg-MBw" firstAttribute="centerX" secondItem="8D5-cA-GIy" secondAttribute="centerX" id="ItE-aX-5wq"/>
+                            <constraint firstItem="DEU-zg-MBw" firstAttribute="top" secondItem="xmL-7L-cf6" secondAttribute="bottom" constant="10" id="d7o-Fz-pAP"/>
+                            <constraint firstItem="xmL-7L-cf6" firstAttribute="top" secondItem="hXA-YH-r4m" secondAttribute="bottom" constant="5" id="eFA-sT-e2G"/>
+                            <constraint firstItem="xmL-7L-cf6" firstAttribute="centerX" secondItem="8D5-cA-GIy" secondAttribute="centerX" id="gSv-SM-ifP"/>
+                            <constraint firstItem="DEU-zg-MBw" firstAttribute="centerY" secondItem="8D5-cA-GIy" secondAttribute="centerY" constant="29" id="kOm-5E-RwG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uRH-zt-Gzx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhX-XZ-fFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.81159420289862" y="25.271739130434785"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Twitter_Logo_Blue" width="400" height="400"/>
+    </resources>
+</document>
